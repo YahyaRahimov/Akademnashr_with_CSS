@@ -5,6 +5,10 @@ body {
   letter-spacing: 0.5px;
 }
 
+*:focus {
+  outline: 2px dotted #FF7500;
+  outline-offset: 2px;
+}
 
 /* SITE HEADER */
 .site-header {
