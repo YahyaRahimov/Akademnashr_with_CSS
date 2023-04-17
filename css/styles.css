@@ -12,10 +12,14 @@ body {
 
 /* SITE HEADER */
 .site-header {
-  background-color: white;
   display: flex;
   justify-content:space-between;
   align-items: center;
+  border-top: 5px solid #FF7500;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: white;
+
 }
 
 .site-header-right {
@@ -29,13 +33,16 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  padding: 0;
 }
 .sitenav-list a {
   text-decoration: none;
 }
 
 .sitenav-link:hover{
-  color:red;
+  color: #FF7500;
+  /* border-width: 92px; */
+  border-bottom: 3px solid #FF7500;
 }
 
 .sitenav-link {
@@ -46,6 +53,8 @@ body {
   text-transform: uppercase;
   /* text-decoration: none; */
   color: black;
+  margin-right: 30px;
+
 }
 
 .muallif {
@@ -57,20 +66,27 @@ body {
 }
 
 .main-link {
+  display: inline-block;
+  padding: 12px 24px;
   font-size: 13px;
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-weight: bold;
   font-style: normal;
   line-height: 15px;
   text-decoration: none;
   background-color: #FF7500;
+  border-radius: 5px;
   color: white;
   font-family: 'Roboto Condensed','Roboto',sans-serif;
+
 }
 
             /* HERO QISMI BOSHLANDI */
 
 .hero{
   background-color: #252420;
+  padding-top: 80px;
+  padding-bottom: 80px;
   color: white;
   display: flex;
   align-items: center;
@@ -86,6 +102,7 @@ body {
   width: 80px;
   height: 3px;
   background-color: #FF7500;
+  border-style: none;
 }
 
 .hero-heading {
@@ -96,18 +113,35 @@ body {
 
 
 .hero-img {
+  /* margin-top: 40px;
+  margin-right: 170px; */
   width: 510px;
   height: 510px;
+  border-radius: 8px;
 }
 
             /* FEATURES QISMI BOSHLANDI */
 
 .features {
+  padding-top: 210px;
+  padding-bottom: 210px;
+
+}
+
+.features-heading {
+  padding-top: 24px;
+  padding-bottom: 72px;
+  font-size: 72px;
+  line-height: 1.2;
+  font-family: 'Roboto Condensed','Roboto','Arial', sans-serif;
+
 }
 
 .feature-div {
   display: flex;
   justify-content: space-between;
+  padding: 0;
+  /* text-align:justify; */
 }
 
 .feature-li {
@@ -115,18 +149,14 @@ body {
   list-style-type: none;
 }
 
-.features-heading {
-  font-size: 72px;
-  line-height: 1.2;
-  font-family: 'Roboto Condensed','Roboto','Arial', sans-serif;
-
-}
-
 .feature-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
   background-color: rgba(255, 117, 0, 0.2);
-
+  border-radius: 50%;
 }
 
 .features-title {
@@ -142,14 +172,21 @@ body {
         /* AKSIYA BO'LIMI BOSHLANDI */
 .sec-aksiya{
   display: flex;
+  /* margin-top: 120px;
+  margin-bottom: 160px;
+  /* width: 1300px;
+  height: 419px; */ */
+  margin-left: 170px;
   justify-content: space-between;
   align-items: center;
   background-color: #252420;
+  border-radius:12px   ;
   color: white;
 }
 
 .sec-aksiya-content {
   width: 440px;
+  margin-left: 64px;
 }
 
 .sec-aksiya-heading {
@@ -176,11 +213,16 @@ body {
   width: 440px;
   height: 440px;
   object-fit: cover;
+  /* border-radius: 12px;
+  margin-right: 64px;
+  margin-bottom: 64px; */
+
 }
               /* FOOTER BO'LIMI BOSHLANDI */
 
 .site-footer {
-
+  padding-top: 56px;
+  padding-bottom: 56px;
   background-color: #F8F8F8;
 
 }
@@ -194,14 +236,17 @@ body {
   display: flex;
   justify-content:flex-end;
   align-items: center;
+  padding: 0;
 }
-.link-icons1 {
+.link-icons-socials {
   margin-right: 20px;
 }
+
 
 .site-footer-line {
   background-color:rgba(37, 36, 32, 0.5) ;
   height: 2px;
+  border-style: none;
 }
 
 .site-footer-bottom{
@@ -212,18 +257,28 @@ body {
   list-style: none;
 }
 
-.site-footer-links {
+.site-footer-ul {
   width: 224px;
   line-height: 19px;
+  /* font-size: 16px; */
+  padding: 0;
 }
 
-.site-footer-links a {
+.site-footer-ul a {
   color: rgba(37, 36, 32, 1);
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
+  font-size: 16px;
 }
 
-.site-footer-links a:hover {
+.site-footer-ul a:hover {
   color: #FF7500;
+}
+
+
+
+.link-icons-socials:hover {
+  color: #FF7500;
+
 }
