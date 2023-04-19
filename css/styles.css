@@ -22,6 +22,10 @@ body {
 
 }
 
+.site-logo img {
+  display: block;
+}
+
 .site-header-right {
   display: flex;
   justify-content: space-evenly;
@@ -34,9 +38,18 @@ body {
   display: flex;
   justify-content: space-evenly;
   padding: 0;
+  margin: 0;
+  margin-right: 32px;
 }
 .sitenav-list a {
   text-decoration: none;
+}
+
+.sitenav-item {
+  margin-right: 32px;
+}
+.sitenav-item:last-child {
+  margin: 0;
 }
 
 .sitenav-link:hover{
@@ -53,9 +66,9 @@ body {
   text-transform: uppercase;
   /* text-decoration: none; */
   color: black;
-  margin-right: 30px;
-
 }
+
+
 
 .muallif {
   text-transform: uppercase;
@@ -103,6 +116,8 @@ body {
   height: 3px;
   background-color: #FF7500;
   border-style: none;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .hero-heading {
@@ -111,6 +126,10 @@ body {
   font-family: 'Roboto Condensed','Arial' sans-serif;
 }
 
+.hero-text {
+ margin-top: 0;
+ margin-bottom: 32px;
+}
 
 .hero-img {
   /* margin-top: 40px;
@@ -131,22 +150,27 @@ body {
 .features-heading {
   padding-top: 24px;
   padding-bottom: 72px;
+  margin-top: 0;
+  margin-bottom: 72px;
   font-size: 72px;
   line-height: 1.2;
   font-family: 'Roboto Condensed','Roboto','Arial', sans-serif;
-
 }
 
 .feature-div {
   display: flex;
-  justify-content: space-between;
   padding: 0;
-  /* text-align:justify; */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .feature-li {
   width: 340px;
+  margin-right: 40px;
   list-style-type: none;
+}
+.feature-li:last-child {
+  margin-right: 0;
 }
 
 .feature-icon-wrapper {
@@ -175,12 +199,11 @@ body {
   /* margin-top: 120px;
   margin-bottom: 160px;
   /* width: 1300px;
-  height: 419px; */ */
-  margin-left: 170px;
+  height: 419px; */
   justify-content: space-between;
   align-items: center;
   background-color: #252420;
-  border-radius:12px   ;
+  border-radius:12px;
   color: white;
 }
 
@@ -194,15 +217,24 @@ body {
   font-weight:700;
   font-style: normal;
   line-height:1.2;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.sec-aksiya-text-wrapper {
+  margin-bottom: 24px;
 }
 
 .sec-aksiya-text {
   font-style: normal;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .sec-aksiya-text700 {
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 .aksiya-highlight {
@@ -215,7 +247,7 @@ body {
   object-fit: cover;
  border-radius: 12px ;
   margin-right: 64px;
-  margin-bottom: 64px; */
+  margin-bottom: 64px;
 
 }
               /* FOOTER BO'LIMI BOSHLANDI */
@@ -237,9 +269,24 @@ body {
   justify-content:flex-end;
   align-items: center;
   padding: 0;
+  margin: 0;
+  margin-right: 16px;
 }
-.link-icons-socials {
-  margin-right: 20px;
+.link-icons li {
+  margin-right: 16px;
+  list-style: none;
+}
+
+.link-icons li:last-child {
+  margin-right: 0;
+}
+
+.link-icons-hover {
+  display: block;
+}
+
+.link-icons svg {
+  display: block;
 }
 
 
@@ -247,22 +294,29 @@ body {
   background-color:rgba(37, 36, 32, 0.5) ;
   height: 2px;
   border-style: none;
+  margin-top: 40px;
+  margin-bottom: 64px;
 }
 
 .site-footer-bottom{
   display: flex;
 }
 
-.site-footer ul {
-  list-style: none;
-}
-
 .site-footer-ul {
   width: 224px;
   line-height: 19px;
   /* font-size: 16px; */
-  padding: 0;
+  padding:0;
+  margin: 0;
+  margin-right: 68px;
+  list-style: none;
+
 }
+
+.site-footer-ul:last-child{
+  margin-right: 0;
+}
+
 
 .site-footer-ul a {
   color: rgba(37, 36, 32, 1);
@@ -276,9 +330,6 @@ body {
   color: #FF7500;
 }
 
-
-
-.link-icons-socials:hover {
+.tel-faceb-insta:hover {
   color: #FF7500;
-
 }
