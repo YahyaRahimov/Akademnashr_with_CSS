@@ -26,6 +26,20 @@ body {
   display: block;
 }
 
+.site-logo {
+  transition: opacity 0.4s ease;
+}
+
+.site-logo:hover {
+  opacity: 0.8;
+}
+
+.site-logo:active {
+  opacity: 0.6;
+}
+
+/* SITE HEADING LINKS */
+
 .site-header-right {
   display: flex;
   justify-content: space-evenly;
@@ -40,6 +54,7 @@ body {
   padding: 0;
   margin: 0;
   margin-right: 32px;
+
 }
 .sitenav-list a {
   text-decoration: none;
@@ -52,12 +67,6 @@ body {
   margin: 0;
 }
 
-.sitenav-link:hover{
-  color: #FF7500;
-  /* border-width: 92px; */
-  border-bottom: 3px solid #FF7500;
-}
-
 .sitenav-link {
   font-weight: 500;
   font-size: 13px;
@@ -66,16 +75,28 @@ body {
   text-transform: uppercase;
   /* text-decoration: none; */
   color: black;
+  transition: color 0.3s ease,
+  border 0.1s ease ,opacity 0.4s ease;
 }
 
+.sitenav-link:active {
+  opacity: 0.6;
+}
 
+.sitenav-link:hover{
+  color: #FF7500;
+  /* border-width: 92px; */
+  border-bottom: 3px solid #FF7500;
+}
 
 .muallif {
   text-transform: uppercase;
   font-size: 13px;
+  transition: color 0.4s ease ,margin 0.5s ease;
 }
 .muallif:hover {
   color: #34bdfc;
+  margin-left: 10px;
 }
 
 .main-link {
@@ -91,7 +112,15 @@ body {
   border-radius: 5px;
   color: white;
   font-family: 'Roboto Condensed','Roboto',sans-serif;
+  transition: opacity 0.4s ease;
+}
 
+.main-link:hover {
+  opacity: 0.8;
+}
+
+.main-link:active {
+  opacity: 0.6;
 }
 
             /* HERO QISMI BOSHLANDI */
@@ -272,6 +301,7 @@ body {
   margin: 0;
   margin-right: 16px;
 }
+
 .link-icons li {
   margin-right: 16px;
   list-style: none;
@@ -281,14 +311,23 @@ body {
   margin-right: 0;
 }
 
-.link-icons-hover {
+.social-link{
   display: block;
+  color:#252420;
+  transition: color 0.2s ease;
 }
 
-.link-icons svg {
-  display: block;
+.social-link:hover {
+  color: #FF7500;
 }
 
+.social-link:active {
+  opacity: 0.6;
+}
+
+.social-link svg {
+  display: block;
+}
 
 .site-footer-line {
   background-color:rgba(37, 36, 32, 0.5) ;
@@ -324,12 +363,18 @@ body {
   font-weight: 400;
   text-decoration: none;
   font-size: 16px;
+  transition: color 0.2s ease,
+  opacity 0.4s ease;
 }
 
 .site-footer-ul a:hover {
   color: #FF7500;
 }
 
-.tel-faceb-insta:hover {
-  color: #FF7500;
+.site-footer-ul a:focus {
+  color:#FF7500;
+}
+
+.site-footer-ul a:active {
+  opacity: 0.6;
 }
