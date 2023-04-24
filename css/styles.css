@@ -1,4 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto","Arial" ,sans-serif;
@@ -8,6 +14,23 @@ body {
 *:focus {
   outline: 2px dotted #FF7500;
   outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header-container {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* SITE HEADER */
@@ -130,10 +153,12 @@ body {
   padding-top: 80px;
   padding-bottom: 80px;
   color: white;
+}
+
+.hero-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .hero-content{
@@ -166,6 +191,7 @@ body {
   width: 510px;
   height: 510px;
   border-radius: 8px;
+  box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
 
             /* FEATURES QISMI BOSHLANDI */
@@ -210,27 +236,32 @@ body {
   height: 100px;
   background-color: rgba(255, 117, 0, 0.2);
   border-radius: 50%;
+  margin-bottom: 32px;
 }
 
 .features-title {
   font-size: 24px;
   line-height: 1.2;
   font-family: 'Roboto Condensed','Roboto','Arial',sans-serif;
+  margin-top: 0;
 }
 
 .feature-info {
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
         /* AKSIYA BO'LIMI BOSHLANDI */
 .sec-aksiya{
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.promo-inner {
   display: flex;
-  /* margin-top: 120px;
-  margin-bottom: 160px;
-  /* width: 1300px;
-  height: 419px; */
   justify-content: space-between;
   align-items: center;
+  padding: 64px;
   background-color: #252420;
   border-radius:12px;
   color: white;
@@ -238,7 +269,7 @@ body {
 
 .sec-aksiya-content {
   width: 440px;
-  margin-left: 64px;
+  /* margin-left: 64px; */
 }
 
 .sec-aksiya-heading {
@@ -274,10 +305,7 @@ body {
   width: 440px;
   height: 440px;
   object-fit: cover;
- border-radius: 12px ;
-  margin-right: 64px;
-  margin-bottom: 64px;
-
+  border-radius: 12px ;
 }
               /* FOOTER BO'LIMI BOSHLANDI */
 
@@ -356,6 +384,14 @@ body {
   margin-right: 0;
 }
 
+.site-footer-ul li {
+  margin-bottom: 16px;
+}
+
+
+.site-footer-ul li:last-child {
+  margin: 0;
+}
 
 .site-footer-ul a {
   color: rgba(37, 36, 32, 1);
