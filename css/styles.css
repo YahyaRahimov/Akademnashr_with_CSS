@@ -1,18 +1,35 @@
-* {
+:root {
+  --brand-color:#ff7500;
+  --heading-font: "Roboto Condensed","Roboto","Arial", sans-serif;
+  --text-font: "Roboto","Arial", sans-serif;
+}
+
+html {
   box-sizing: border-box;
+  height: 1005px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 0;
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Roboto","Arial" ,sans-serif;
+  font-family: var(--text-font);
   letter-spacing: 0.5px;
 }
 
 *:focus {
-  outline: 2px dotted #FF7500;
+  outline: 2px dotted var(--brand-color);
   outline-offset: 2px;
 }
 
@@ -38,7 +55,7 @@ body {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  border-top: 5px solid #FF7500;
+  border-top: 5px solid var(--brand-color);
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: white;
@@ -96,10 +113,11 @@ body {
   line-height: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  /* text-decoration: none; */
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
   color: black;
   transition: color 0.3s ease,
-  border 0.1s ease ,opacity 0.4s ease;
+  border 0.2s ease, opacity 0.4s ease;
 }
 
 .sitenav-link:active {
@@ -107,15 +125,15 @@ body {
 }
 
 .sitenav-link:hover{
-  color: #FF7500;
+  color: var(--brand-color);
   /* border-width: 92px; */
-  border-bottom: 3px solid #FF7500;
+  border-color: var(--brand-color);
 }
 
 .muallif {
   text-transform: uppercase;
   font-size: 13px;
-  transition: color 0.4s ease ,margin 0.5s ease;
+  transition: color 0.4s ease, margin 0.4s ease;
 }
 .muallif:hover {
   color: #34bdfc;
@@ -131,10 +149,10 @@ body {
   font-style: normal;
   line-height: 15px;
   text-decoration: none;
-  background-color: #FF7500;
+  background-color: var(--brand-color);
   border-radius: 5px;
   color: white;
-  font-family: 'Roboto Condensed','Roboto',sans-serif;
+  font-family: var(--heading-font);
   transition: opacity 0.4s ease;
 }
 
@@ -168,7 +186,7 @@ body {
 .orange-line {
   width: 80px;
   height: 3px;
-  background-color: #FF7500;
+  background-color: var(--brand-color);
   border-style: none;
   margin: 0;
   margin-bottom: 40px;
@@ -177,12 +195,12 @@ body {
 .hero-heading {
   font-size: 40px;
   line-height: 1.2;
-  font-family: 'Roboto Condensed','Arial' sans-serif;
+  font-family:var(--heading-font);
 }
 
 .hero-text {
- margin-top: 0;
- margin-bottom: 32px;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .hero-img {
@@ -209,7 +227,7 @@ body {
   margin-bottom: 72px;
   font-size: 72px;
   line-height: 1.2;
-  font-family: 'Roboto Condensed','Roboto','Arial', sans-serif;
+  font-family: var(--heading-font) sans-serif;
 }
 
 .feature-div {
@@ -242,7 +260,7 @@ body {
 .features-title {
   font-size: 24px;
   line-height: 1.2;
-  font-family: 'Roboto Condensed','Roboto','Arial',sans-serif;
+  font-family: var(--heading-font)sans-serif;
   margin-top: 0;
 }
 
@@ -298,7 +316,7 @@ body {
 }
 
 .aksiya-highlight {
-  color: #FF7500;
+  color: var(--brand-color);
 }
 
 .aksiya-kitob {
@@ -346,7 +364,7 @@ body {
 }
 
 .social-link:hover {
-  color: #FF7500;
+  color: var(--brand-color);
 }
 
 .social-link:active {
@@ -404,11 +422,11 @@ body {
 }
 
 .site-footer-ul a:hover {
-  color: #FF7500;
+  color: var(--brand-color);
 }
 
 .site-footer-ul a:focus {
-  color:#FF7500;
+  color:var(--brand-color);
 }
 
 .site-footer-ul a:active {
